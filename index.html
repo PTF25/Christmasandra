@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <title>Navideño</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cambia el archivo MP4 en la ruta del source para personalizar el fondo -->
+  <section id="intro" class="intro-screen">
+    <video class="intro-video" autoplay muted loop playsinline>
+      <source src="https://i.imgur.com/U0kuGZ2.mp4" type="video/mp4">
+    </video>
+    <div class="intro-shade"></div>
+    <div class="intro-content">
+      <p class="eyebrow">Bienvenido a mi Xatspace Invernal</p>
+      <h1>NAVIDAD<br><span>SANDRA</span></h1>
+      <p class="intro-subtitle">Un pequeño rincón, donde la cálidez no falta</p>
+      <button id="enterButton" class="ice-button enter-button"> Entrar </button>
+    </div>
+    <div class="intro-footer">PONTE CÓMODO · LA NIEVE YA ESTÁ CAYENDO</div>
+  </section>
+
+  <main id="mainPage" class="site-shell" hidden>
+    <div class="ambient-glow glow-one"></div><div class="ambient-glow glow-two"></div>
+        <!-- PÁGINA PRINCIPAL -->         
+    <section id="homeView" class="page-view home-view">    
+            <section id="inicio" class="hero-section hero-centered">
+        <div class="hero-copy">
+                    <h1>El invierno<em><br>tiene su encánto... Bienvenid@</em></h1>
+         
+        </div>
+      </section>    
+    </section>
+
+    <!-- PÁGINA SOBRE MÍ -->
+    <section id="aboutView" class="page-view inner-view" hidden>      
+            <button class="back-button" data-view="home"><span>←</span> Volver</button>
+      <section id="sobre-mi" class="content-section about-section">
+        <div class="section-heading"></h2></div>
+        <div class="about-layout">
+          <div class="glass-card about-card">
+            <span class="card-kicker">HOLA, QUÉ ALEGRÍA VERTE</span>
+            <h3>Este pequeño mundo<br>es un reflejo de mí.</h3>
+            <p>Sandra vive la Navidad de una manera íntima, silenciosa y profundamente conmovedora. No es de las que busca el centro de atención en las fiestas, ni de las que se hace notar al llegar; al contrario, su presencia se siente como una luz suave que entibia la habitación sin deslumbrar a nadie. Cuando entra a un lugar, prefiere sentarse en el rincón más tranquilo, observando el bullicio con una sonrisa tímida y una taza caliente entre las manos, usando el vapor como un dulce refugio.
+Para ella, estas fechas son un viaje directo a los recuerdos. Tiene un alma nostálgica que se emociona con los pequeños detalles que otros pasan por alto: el olor a castañas asadas que le recuerda a su infancia, un adorno antiguo y desgastado en el árbol, o esa canción vieja que prefiere escuchar a solas con los ojos cerrados. Encuentra una belleza melancólica en los días grises de diciembre y en la quietud de las noches de invierno.</p>
+            <div class="signature">Con cariño, <span>Sandra</span></div>
+            
+          </div>
+          <figure class="portrait-frame portrait-large">
+            <img src="https://i.imgur.com/rj2rdSX.png" alt="Mi fotografía" onerror="this.onerror=null;this.src='assets/images/placeholder.svg'">
+            <figcaption></figcaption>
+          </figure>
+          
+        </div>
+      </section>
+    </section>
+
+    <!-- PÁGINA MÚSICA -->
+    <section id="musicView" class="page-view inner-view" hidden>
+            <button class="back-button" data-view="home"><span>←</span> Volver</button>
+      <section id="musica" class="content-section music-section">
+        <div class="section-heading centered"><p class="eyebrow"></p><h2>Un poco de <em>música</em></h2><p class="section-intro">Dale al play, deja que nieve y relájate.</p></div>
+        <div class="music-stage">
+          <div class="wind wind-one"></div><div class="wind wind-two"></div>
+          <div class="music-snow" aria-hidden="true"></div>
+          <div class="player-card">
+            <div class="album-art"><div class="album-moon"></div><span>❄</span><div class="album-horizon"></div></div>
+            <p class="player-label">WINTER COLLECTION</p>
+            <h3 id="trackTitle">Noche de invierno</h3>
+            <p id="trackArtist" class="track-artist">Una pausa para respirar</p>
+            <div class="track-progress"><span id="progressFill"></span></div>
+            <div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+            <div class="player-controls">
+              <button id="prevTrack" class="control-button" aria-label="Canción anterior" title="Anterior">⏮</button>
+              <button id="playTrack" class="play-button" aria-label="Reproducir">▶</button>
+              <button id="nextTrack" class="control-button" aria-label="Canción siguiente" title="Siguiente">⏭</button>         
+            </div>
+            <p id="playerStatus" class="player-status">Tu banda sonora para los días fríos</p>
+            <audio id="audioPlayer" preload="metadata"></audio>
+          </div>
+        </div>       
+      </section>
+    </section>
+
+    <!-- PÁGINA AMIGOS -->
+    <section id="friendsView" class="page-view inner-view" hidden>
+            <button class="back-button" data-view="home"><span>←</span> Volver</button>
+      <section id="amigos" class="content-section friends-section">
+        <div class="section-heading centered"><p class="eyebrow"></p><h2>Mis <em>amigos</em></h2><p class="section-intro">personas que hacen que el frio invierno, sea un hogar.</p></div>
+        <div class="friends-grid">
+          <a class="friend-card" href="https://xat.me/diablabella89" target="_blank" rel="noopener noreferrer"><div class="friend-photo"><img src="https://i.imgur.com/Ke2l03u.png" alt="Foto de Amigo uno" onerror="this.onerror=null;this.src='assets/images/placeholder.svg'"></div><span class="friend-name">LUNA</span><span class="friend-caption">La que me apoya en todo</span></a>
+          <a class="friend-card" href="https://xat.me/pitufo" target="_blank" rel="noopener noreferrer"><div class="friend-photo"><img src="https://i.imgur.com/MzXmZep.png" alt="Foto de Amigo dos" onerror="this.onerror=null;this.src='assets/images/placeholder.svg'"></div><span class="friend-name">PITUFO</span><span class="friend-caption">El creador de todo lo que llevo</span></a>
+          <a class="friend-card" href="https://xat.me/SaritaDeTenerife" target="_blank" rel="noopener noreferrer"><div class="friend-photo"><img src="https://i.imgur.com/uPxi2ux.png" alt="Foto de Amigo tres" onerror="this.onerror=null;this.src='assets/images/placeholder.svg'"></div><span class="friend-name">SARA</span><span class="friend-caption">Mi hermanita bella</span></a>
+          <a class="friend-card" href="https://xat.me/Matt" target="_blank" rel="noopener noreferrer"><div class="friend-photo"><img src="https://i.imgur.com/CWHVN8Q.png" alt="Foto de Amigo cuatro" onerror="this.onerror=null;this.src='assets/images/placeholder.svg'"></div><span class="friend-name">MATT</span><span class="friend-caption">Amigo incondicional</span></a>
+      
+        </div>
+      </section>
+    </section>
+
+    <footer class="site-footer"><span>PTF2026</span><span>SANDRA 2026/2027</span></footer>
+
+    <div class="clock-widget" aria-label="Fecha y hora actual"><span class="clock-dot"></span><div><time id="clockTime">00:00:00</time><span id="clockDate">Cargando fecha…</span></div></div>
+
+    <nav class="bottom-nav" aria-label="Navegación principal">
+      <button type="button" class="nav-ice" data-view="about"><span class="nav-icon">✧</span><span>SOBRE MÍ</span><i class="nav-snow"></i></button>
+      <button type="button" class="nav-ice" data-view="music"><span class="nav-icon">♫</span><span>MÚSICA</span><i class="nav-snow"></i></button>
+      <button type="button" class="nav-ice" data-view="friends"><span class="nav-icon">❄</span><span>AMIGOS</span><i class="nav-snow"></i></button>
+    </nav>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
